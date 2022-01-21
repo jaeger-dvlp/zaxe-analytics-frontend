@@ -69,7 +69,7 @@ function App() {
 
   return (
     <div
-      className="w-full font-pop flex flex-wrap justify-center content-start bg-fixed pt-[10vh] p-0 absolute min-h-screen bg-black text-white bg-cover bg-center bg-no-repeat"
+      className="w-full font-pop flex flex-wrap justify-center content-start bg-fixed pt-[5vh] p-0 absolute min-h-screen bg-black text-white bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: `url(${images.CenteredWaveGlowBlue})` }}
     >
       <div className="max-w-3xl w-full flex flex-wrap justify-center p-0 m-0 content-start">
@@ -110,15 +110,29 @@ function App() {
           </div>
         </div>
         <div className="container flex flex-wrap justify-center p-0">
-          <div className=" w-full flex justify-center">
-            <div className="py-16 w-full text-left p-5">
-              <h1 className="text-2xl font-semibold text-white">
+          <div className=" w-full flex flex-wrap justify-center">
+            <div className="py-16  self-center xl:w-3/4 lg:w-3/4 w-full text-left p-5">
+              <h1 className="xl:text-4xl pb-0 lg:text-3xl text-2xl font-semibold text-white">
                 Nasıl gözükelim istersiniz?
               </h1>
-              <p className="text-white text-sm">
+              <p className="text-white text-[0.8rem]">
                 Tasarım yüzü olarak bizi en iyi ifade edeceğini düşündüğünüz
                 hangisidir?
               </p>
+            </div>
+            <div className="py-16 pb-4 flex flex-wrap justify-end xl:mt-auto lg:mt-auto -mt-64 px-5 xl:w-1/4 lg:w-1/4 w-full">
+              <img
+                src="https://stock.setrow.com/pimage/dragandropupload/2252/20220117105656amUntitled-1.png"
+                alt="Zaxe X Shadow"
+                className="xl:max-w-full lg:max-w-full max-w-[8rem] w-full"
+              />
+              <div className="w-full flex xl:justify-center lg:justify-center justify-end pt-2">
+                <img
+                  src="https://stock.setrow.com/pimage/dragandropupload/2252/20220117104648amlogo.png"
+                  alt="zaxe logo white png"
+                  className="max-w-[4rem] px-2 w-full"
+                />
+              </div>
             </div>
           </div>
           <div className="max-w-5xl  grid grid-cols-4 gap-5 justify-center ">
@@ -147,11 +161,17 @@ function App() {
           </div>
         </div>
         <div className="w-full flex flex-wrap justify-center content-start py-12">
-          <div className="flex w-full p-5 flex-wrap justify-between gap-5">
-            <h1 className="self-center text-xl font-medium">
+          <div className="flex w-full p-5 flex-wrap xl:justify-between lg:justify-between justify-center gap-5">
+            <h1 className="self-center text-xl xl:text-left lg:text-left text-center  font-medium">
               Sosyal medya hesaplarımızı takip et ve paylaş.
             </h1>
-            <AiFillYoutube className="self-center text-5xl text-white" />
+            <a
+              href="https://www.youtube.com/c/Zaxe3D"
+              target={'_blank'}
+              rel="noreferrer"
+            >
+              <AiFillYoutube className="self-center text-5xl text-white" />
+            </a>
           </div>
           <div className="p-5 w-full">
             <iframe
@@ -186,11 +206,17 @@ function App() {
               allowfullscreen
             ></iframe>
           </div>
-          <div className="flex w-full p-5 flex-wrap justify-between gap-5">
-            <h1 className="self-center text-xl font-medium">
+          <div className="flex w-full p-5 flex-wrap xl:justify-between lg:justify-between justify-center gap-5">
+            <h1 className="self-center text-xl xl:text-left lg:text-left text-center  font-medium">
               Sosyal medya hesaplarımızı takip et ve paylaş.
             </h1>
-            <AiFillInstagram className="self-center text-5xl text-white" />
+            <a
+              href="https://www.instagram.com/zaxe3d/"
+              target={'_blank'}
+              rel="noreferrer"
+            >
+              <AiFillInstagram className="self-center text-5xl text-white" />
+            </a>
           </div>
           <div className="w-full flex justify-center p-5">
             <blockquote
@@ -473,15 +499,23 @@ function App() {
               </div>
             </blockquote>
           </div>
-          <div className="flex w-full p-5 flex-wrap justify-between gap-5">
-            <h1 className="self-center text-xl font-medium">
+          <div className="flex w-full p-5 flex-wrap xl:justify-between lg:justify-between justify-center gap-5">
+            <h1 className="self-center text-xl xl:text-left lg:text-left text-center  font-medium">
               Sosyal medya hesaplarımızı takip et ve paylaş.
             </h1>
-            <AiFillLinkedin className="self-center text-5xl text-white" />
+            <a
+              href="https://tr.linkedin.com/company/zaxe"
+              target={'_blank'}
+              rel="noreferrer"
+            >
+              <AiFillLinkedin className="self-center text-5xl text-white" />
+            </a>
           </div>
           <a
             href="https://tr.linkedin.com/company/zaxe"
+            target={'_blank'}
             className="w-full p-5 justify-center flex"
+            rel="noreferrer"
           >
             <img
               className="w-full rounded-md object-contain"
