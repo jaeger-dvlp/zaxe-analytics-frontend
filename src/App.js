@@ -120,6 +120,11 @@ function App() {
         </div>
         <div className="container flex flex-wrap justify-center p-0">
           <div className=" w-full flex flex-wrap justify-center">
+            <div className="w-full flex flex-wrap justify-center">
+              <p className="text-2xl text-center pb-0 font-semibold text-[#009ade] pt-5 ">
+                *BU MAİLİN ŞİRKET İÇİ YAPILMAKTADIR. LÜTFEN PAYLAŞMAYINIZ.
+              </p>
+            </div>
             <div className="py-16  self-center xl:w-3/4 lg:w-3/4 w-full text-left p-5">
               <h1 className="xl:text-4xl pb-0 lg:text-3xl text-2xl font-semibold text-white">
                 Nasıl gözükelim istersiniz?
@@ -127,9 +132,6 @@ function App() {
               <p className="text-white text-[0.8rem]">
                 Tasarım yüzü olarak bizi en iyi ifade edeceğini düşündüğünüz
                 hangisidir?
-              </p>
-              <p className="text-[0.9rem] pb-0 font-semibold text-[#009ade] pt-5 ">
-                *BU MAİLİN ŞİRKET İÇİ YAPILMAKTADIR. LÜTFEN PAYLAŞMAYINIZ.
               </p>
             </div>
             <div className="py-16 pb-4 flex flex-wrap justify-end xl:mt-auto lg:mt-auto -mt-64 px-5 xl:w-1/4 lg:w-1/4 w-full">
