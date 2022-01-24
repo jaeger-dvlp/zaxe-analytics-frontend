@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-has-content */
 import React, { useState } from 'react'
 import images from './images'
 
@@ -7,6 +8,7 @@ import {
   AiFillLinkedin,
   AiFillYoutube
 } from 'react-icons/ai'
+import { FaPinterestSquare } from 'react-icons/fa'
 
 const spinner = (
   <svg
@@ -532,6 +534,28 @@ function App() {
               }
             />
           </a>
+          <div className="flex w-full p-5 flex-wrap xl:justify-between lg:justify-between justify-center gap-5">
+            <h1 className="self-center text-xl xl:text-left lg:text-left text-center  font-medium">
+              Sosyal medya hesaplarımızı takip et ve paylaş.
+            </h1>
+            <a
+              href="https://tr.pinterest.com/zaxe3d/"
+              target={'_blank'}
+              rel="noreferrer"
+            >
+              <FaPinterestSquare className="self-center text-5xl text-white" />
+            </a>
+          </div>
+          <div className="w-full pinterest-iframe p-5 flex justify-center">
+            <a
+              className="w-full"
+              data-pin-do="embedUser"
+              data-pin-board-width="480"
+              data-pin-scale-height="240"
+              data-pin-scale-width="80"
+              href="https://tr.pinterest.com/zaxe3d/"
+            ></a>
+          </div>
           <div className="w-full justify-center flex text-center text-sm text-white">
             <a href="https://zaxe.com">www.zaxe.com</a>
           </div>
