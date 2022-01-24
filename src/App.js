@@ -65,7 +65,7 @@ function App() {
     })
       .then((res) => res.json())
       .then((data) => {
-        if (data.status === 200) {
+        if (data.code === 200) {
           setPopUp('check')
         } else {
           setPopUp('error')
