@@ -122,7 +122,7 @@ function App() {
           <div className=" w-full flex flex-wrap justify-center">
             <div className="w-full flex flex-wrap justify-center">
               <p className="text-2xl text-center pb-0 font-semibold text-[#009ade] pt-5 ">
-                *BU MAİLİN ŞİRKET İÇİ YAPILMAKTADIR. LÜTFEN PAYLAŞMAYINIZ.
+                *BU MAİLİNG ŞİRKET İÇİ YAPILMAKTADIR. LÜTFEN PAYLAŞMAYINIZ.
               </p>
             </div>
             <div className="py-16  self-center xl:w-3/4 lg:w-3/4 w-full text-left p-5">
