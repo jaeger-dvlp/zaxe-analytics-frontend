@@ -48,21 +48,28 @@ function App() {
   ]
 
   const [popUp, setPopUp] = useState(false)
+  const [voteDate] = useState('5 Ocak 2022')
+  const URL = process.env.REACT_APP_ZAXE_REMOTE
 
   const sendVote = (vote) => {
-    fetch('https://zaxe-analytics-server.herokuapp.com/api/setVote', {
+    fetch(`${URL}/api/setVote`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
-        query: vote
+        voteDate: voteDate,
+        voteElement: vote,
+        voteListLength: content.length
       })
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log(data)
-        setPopUp('check')
+        if (data.status === 200) {
+          setPopUp('check')
+        } else {
+          setPopUp('error')
+        }
       })
       .catch((err) => setPopUp('error'))
   }
