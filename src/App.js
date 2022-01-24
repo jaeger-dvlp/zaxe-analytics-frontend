@@ -50,7 +50,7 @@ function App() {
   ]
 
   const [popUp, setPopUp] = useState(false)
-  const [voteDate] = useState('5 Ocak 2022')
+  const [voteDate] = useState('24 Ocak 2022')
   const URL = process.env.REACT_APP_ZAXE_REMOTE
 
   const sendVote = (vote) => {
