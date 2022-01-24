@@ -322,7 +322,7 @@ function App() {
                         stroke="none"
                         stroke-width="1"
                         fill="none"
-                        fill-rule="evenodd"
+                        fillRule="evenodd"
                       >
                         <g
                           transform="translate(-511.000000, -20.000000)"
